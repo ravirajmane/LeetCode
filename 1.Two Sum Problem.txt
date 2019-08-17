@@ -1,0 +1,24 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+   let arr={};
+    
+    for(let i=0;i<nums.length;i++){
+        if(target-nums[i] in arr){     
+     
+            return [arr[target-nums[i]],i]
+           
+        }else
+            {
+               
+               arr[nums[i]]=i;
+               
+                
+            }
+    }
+    
+    
+};
