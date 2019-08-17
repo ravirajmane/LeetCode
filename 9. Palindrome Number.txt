@@ -1,0 +1,18 @@
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+    
+
+  let y= x.toString();
+  let st=0;
+    let end=y.length-1;
+    while(st<end)
+        {
+            if(y.charAt(st++)!=y.charAt(end--)) return false;
+        }
+    
+    return true;
+    
+};
